@@ -43,7 +43,7 @@ interface SongContextType {
   fetchSingleSong:()=>Promise<void>;
   nextSong:()=>void;
   prevSong:()=>void;
-  albumSong:Song;
+  albumSong:Song[];
   albumData:Album|null;
   fetchAlbumSongs:(id:string)=>Promise<void>;
   fetchSongs:()=>Promise<void>

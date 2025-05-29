@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import { useUserData } from '../context/UserContext'
 import { useSongData, type Song } from '../context/SongContext'

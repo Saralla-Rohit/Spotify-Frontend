@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import Layout from "../components/Layout"
-import { useSongData } from "../context/SongContext"
+import { useSongData, type Song } from "../context/SongContext"
 import { useEffect } from "react"
 import Loading from "../components/Loading"
 import { FaBookmark, FaPlay } from "react-icons/fa"
@@ -49,7 +49,7 @@ const Album = () => {
                             </div>
                             <hr />
                             {
-                                albumSong && albumSong.map((song, index) => {
+                                albumSong && albumSong.map((song:Song, index:number) => {
                                     return (
                                         <div className="grid grid-cols-3 sm:grid-cols-4 mt-10 mb-4 pl-2 text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer" key={index}>
                                             <p className="text-white">
